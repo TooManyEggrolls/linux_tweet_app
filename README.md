@@ -1,5 +1,7 @@
 # Linux Tweet App
 
+[![license](https://img.shields.io/github/license/TooManyEggrolls/linux_tweet_app?style=flat-square)](https://github.com/TooManyEggrolls/linux_tweet_app/blob/master/LICENSE)
+
 This is very simple NGINX website that allows a user to send a tweet.  If you have Jenkins installed and have setup a webhook in GitHub, Jenkins will automatically create and push your new Docker image to your Docker Hub repo on a Git commit.  Pushing to Nexus -- WIP.
 
 ## To use it:
