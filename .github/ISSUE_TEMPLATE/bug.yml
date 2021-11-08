@@ -27,7 +27,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: what-happened
+    id: expected-outcome
     attributes:
       label: Expected outcome?
       description: What did you expect to happen?
