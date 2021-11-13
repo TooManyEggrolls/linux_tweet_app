@@ -5,7 +5,7 @@
 
 This is very simple NGINX website that allows a user to send a tweet.  If you have Jenkins installed and have setup a webhook in GitHub, Jenkins will automatically create and push your new Docker image to your Docker Hub repo on a Git commit.  Pushing to Nexus -- WIP.
 
-## To use it:
+## To use it
 
 Build it:
 `docker build -t linux_tweet_app .`
@@ -13,11 +13,11 @@ Build it:
 Run it:
 `docker container run --detach -p 80:80 linux_tweet_app`
 
-## Dockerfile:
+## Dockerfile
 
 The `FROM` command is using `nginx` as the base image.  `COPY` copies 2 files.  `EXPOSE` exposes a port.  `CMD` will run nginx in the foreground.
 
-## Jenkinsfile:
+## Jenkinsfile
 
 This file is divided into 4 stages: clone, build, test, and push.  
 - The 'clone' stage checks out the repo from GitHub.  
